@@ -1,0 +1,9 @@
+name = "labgo"
+license ="MIT"
+description = "A simple theme for labs or whatever"
+tags = ["bootstrap","font awesome"]
+
+
+[author]
+    name = "Brendan Murphy"
+    homepage = "https://brendanmurphy.xyz"
