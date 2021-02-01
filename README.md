@@ -67,7 +67,7 @@ This is new and my first go at a hugo theme so hopefully some updates to come.
 
 ## In the Wild
 
-You can view this theme being used for [www.deanlab.com]
+You can view this theme being used for [](www.deanlab.com)
 
 ## License
 
@@ -75,7 +75,7 @@ This project is distributed under the MIT License
 
 ## Built and Maintained By
 
-Brendan Murphy | [www.brendanmurphy.xyz] | brendan@thesimpelkid.com
+Brendan Murphy | [](www.brendanmurphy.xyz) | brendan@thesimpelkid.com
 
 Feel free to contact me with and comments or questions
 
