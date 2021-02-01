@@ -1,5 +1,9 @@
+{{ if .Site.Params.useNetlifyCMS }}
+
 {{ define "head" }}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{{ end }}
+
 {{ end }}
 
 {{ define "main" }}
@@ -61,6 +65,24 @@
     </div>
 </div>
 
+{{ end }}
+
+{{ end }}
+
+{{ if .Site.Params.useNetlifyCMS }}
+
+{{ define "endJS" }}
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
 {{ end }}
 
 {{ end }}
