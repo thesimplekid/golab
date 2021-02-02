@@ -36,8 +36,9 @@ If you would like to use [netlifycms](https://www.netlifycms.org/) to mange the 
 
 ##### Set `sitename/config.toml`
 
-```
 Example config.toml
+
+```
 
 baseURL = "https://www.sitename.com"
 languageCode = "en-us"
