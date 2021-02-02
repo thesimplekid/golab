@@ -1,23 +1,20 @@
-<header class="container">
-    <div class="container head_wrap">
-        <img
-            src="https://res.cloudinary.com/{{ .Site.Params.cloudinary_id }}/image/upload/v1381412670/uu1mlsbav8zglaovhod3.jpg">
-    </div>
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark" role="banner">
-        <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark" role="banner">
+    <a class="navbar-brand my-2 ml-5" href="/">
+        <h3>{{ .Site.Title }}</h3>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             {{- $currentPage := . -}}
             {{ range .Site.Menus.navbar.Sort }}
             {{ $menuURL := .URL | absLangURL }}
-            <li class="nav-item" style="list-style-type: none;">
+            <li class="nav-item my-2" style="list-style-type: none;">
                 {{/* Between {{ }} has to stay on one line or there are errors */}}
-                <a class="nav-link
-                
+                <a class="nav-link h5 
                 {{ if or ($currentPage.IsMenuCurrent `navbar` .) ($currentPage.HasMenuCurrent `navbar` .) }} active{{end}}"
                     href=" {{ .URL }}" title="{{ .Title }}">
                     {{ .Name }}</a>
             </li>
             {{ end }}
         </ul>
-    </nav>
-</header>
+    </div>
+</nav>
