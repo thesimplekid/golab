@@ -1,0 +1,3 @@
+[submodule "labgo-example"]
+	path = labgo-example
+	url = https://gitlab.com/labgo-theme/labgo-example.git
